@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.tencent.map.sdk.samples">
+
+    <application
+        android:allowBackup="true"
+        android:description="@string/app_desc"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning">
+        <activity android:name=".track.TrackAcquisitionUploadActivity"
+            android:description="@string/desc_activity_track_upload"
+            android:enabled="true"
+            android:label="@string/title_activity_track_upload"
+            android:parentActivityName=".main.TrackActivity"></activity>
+        <activity
+            android:name=".overlay.LogisticsStateActivity"
+            android:description="@string/desc_activity_logistics"
+            android:enabled="true"
+            android:label="@string/title_activity_logistics"
+            android:parentActivityName=".main.OverlayActivity"></activity>
+<!--        <activity android:name=".main.TraceActivity" />-->
+        <activity
+            android:name=".overlay.MarkerPaddingActivity"
+            android:description="@string/desc_activity_marker_padding"
+            android:enabled="true"
+            android:label="@string/title_activity_marker_paddiing"
+            android:parentActivityName=".main.OverlayActivity" />
+        <activity
+            android:name=".overlay.MultipleInfowindowsActivity"
+            android:description="@string/desc_activity_multiple_inforwindow"
+            android:enabled="true"
+            android:label="@string/title_activity_multiple_infowindow"
+            android:parentActivityName=".main.OverlayActivity" />
+        <activity
+            android:name=".location.LocationMarkerMoveActivity"
+            android:description="@string/desc_activity_location_marker_move"
+            android:enabled="true"
+            android:label="@string/title_activity_location_marker_move"
+            android:parentActivityName=".main.LocationActivity">
+            <meta-data
+                android:name="ORDER"
+                android:value="0" />
+        </activity>
+        <activity
+            android:name=".location.LocationPrecisionCircleActivity"
+            android:description="@string/desc_activity_location_precision_circle"
+            android:enabled="true"
+            android:label="@string/title_activity_location_precision_circle"
+            android:parentActivityName=".main.LocationActivity">
+            <meta-data
+                android:name="ORDER"
+                android:value="1" />
+        </activity>
+        <activity
+            android:name=".basic.MobileGeofencingActivity"
+            android:description="@string/desc_activity_mobile_geofencing"
+            android:enabled="true"
+            android:label="@string/title_activity_mobile_geofencing"
+            android:parentActivityName=".main.BasicMapActivity">
+            <meta-data
+                android:name="ORDER"
+                android:value="5" />
+        </activity>
+        <activity
+            android:name=".overlay.MarkerAnimationEffectActivity"
+            android:description="@string/desc_activity_marker_animation"
+            android:enabled="true"
+            android:label="@string/title_activity_marker_amimation"
+            android:parentActivityName=".main.OverlayActivity">
+            <meta-data
+                android:name="ORDER"
+                android:value="2" />
+        </activity>
+        <activity
+            android:name=".overlay.Hide3DBuildingActivity"
+            android:description="@string/desc_activity_hide_3D"
+            android:enabled="true"
+            android:label="@string/title_activity_hide_3D"
+            android:parentActivityName=".main.OverlayActivity">
+            <meta-data
+                android:name="ORDER"
+                android:value="1" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:description="@string/app_desc"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".main.BasicMapActivity"
+            android:description="@string/desc_activity_basic_map"
+            android:label="@string/title_activity_basic_map"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="ORDER"
+                android:value="0" />
+        </activity>
+        <activity
+            android:name=".main.OverlayActivity"
+            android:description="@string/desc_activity_overlay"
+            android:label="@string/title_activity_overlay"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="ORDER"
+                android:value="1" />
+        </activity>
+        <activity
+            android:name=".main.TrackActivity"
+            android:description="@string/desc_activity_route_track"
+            android:label="@string/title_activity_route_track"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="ORDER"
+                android:value="2" />
+        </activity>
+        <activity
+            android:name=".main.LocationActivity"
+            android:description="@string/desc_activity_location"
+            android:label="@string/title_activity_location"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="ORDER"
+                android:value="2" />
+        </activity>
+        <activity
+            android:name=".main.GestureActivity"
+            android:description="@string/desc_activity_gesture"
+            android:enabled="false"
+            android:label="@string/title_activity_gesture"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".basic.ShowMarkersActivity"
+            android:description="@string/desc_activity_show_markers"
+            android:enabled="true"
+            android:label="@string/title_activity_show_markers"
+            android:parentActivityName=".main.BasicMapActivity">
+            <meta-data
+                android:name="ORDER"
+                android:value="3" />
+        </activity>
+        <activity
+            android:name=".basic.MarkerClusterActivity"
+            android:description="@string/desc_activity_marker_cluster"
+            android:enabled="true"
+            android:label="@string/title_activity_marker_cluster"
+            android:parentActivityName=".main.BasicMapActivity">
+            <meta-data
+                android:name="ORDER"
+                android:value="3" />
+        </activity>
+        <activity
+            android:name=".basic.LimitMapVisibleBoundActivity"
+            android:description="@string/desc_activity_limit_map_visible_bound"
+            android:label="@string/title_activity_limit_map_visible_bound"
+            android:parentActivityName=".main.BasicMapActivity">
+            <meta-data
+                android:name="ORDER"
+                android:value="2" />
+        </activity>
+        <activity
+            android:name=".basic.MapCenterActivity"
+            android:description="@string/desc_activity_map_center"
+            android:label="@string/title_activity_map_center"
+            android:parentActivityName=".main.BasicMapActivity">
+            <meta-data
+                android:name="ORDER"
+                android:value="1" />
+        </activity>
+        <activity
+            android:name=".basic.SearchPOIActivity"
+            android:description="@string/desc_activity_find_poi"
+            android:enabled="true"
+            android:label="@string/title_activity_find_poi"
+            android:parentActivityName=".main.BasicMapActivity">
+            <meta-data
+                android:name="ORDER"
+                android:value="0" />
+        </activity>
+        <activity
+            android:name=".basic.SearchPOI2Activity"
+            android:description="@string/desc_activity_find_poi"
+            android:enabled="true"
+            android:label="@string/title_activity_find_poi"
+            android:parentActivityName=".main.BasicMapActivity">
+            <meta-data
+                android:name="ORDER"
+                android:value="6" />
+        </activity>
+        <activity
+            android:name=".overlay.InvisiblePOIActivity"
+            android:description="@string/desc_activity_invisible_poi"
+            android:label="@string/title_activity_invisible_poi"
+            android:parentActivityName=".main.OverlayActivity" />
+        <activity
+            android:name=".gesture.CustomGestureActivity"
+            android:description="@string/desc_activity_custom_gesture"
+            android:enabled="false"
+            android:label="@string/title_activity_custom_gesture"
+            android:parentActivityName=".main.GestureActivity" />
+        <activity
+            android:name=".track.SmoothMoveActivity"
+            android:description="@string/desc_activity_smooth_move"
+            android:label="@string/title_activity_smooth_move"
+            android:parentActivityName=".main.TrackActivity" />
+
+        <meta-data
+            android:name="TencentMapSDK"
+            android:value="EXLBZ-B7TH5-CTZIK-QNQFR-76OGO-GNFCS" />
+        <!-- 轨迹SDK所需类-->
+        <!-- 轨迹 sdk 内部的 Service 包含定位的封装和轨迹数据的上传功能 -->
+        <service
+            android:name="com.tencent.map.track.service.TencentTrackService"
+            android:exported="true" />
+        <!-- 轨迹 sdk 内部的 receiver，用于接收系统广播将 TencentTrackService 唤醒 -->
+        <receiver android:name="com.tencent.map.track.immortal.receiver.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.intent.action.PACKAGE_RESTARTED" />
+            </intent-filter>
+        </receiver>
+        <!-- 轨迹 sdk 内部的 jobscheduler 使用的 JobSerivce 用于检查 TencentTrackService 状态并在 TencentTrackService 被杀死后尝试重新唤起 -->
+        <service
+            android:name="com.tencent.map.track.immortal.service.TencentTrackJobService"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+    </application>
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 轨迹SDK所需权限 -->
+    <!-- 轨迹数据的缓存需要 sd 卡读写 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 使用wakelock权限 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- android P 以上前台服务需要这个权限 -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+
+
+</manifest>
