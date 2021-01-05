@@ -30,11 +30,11 @@ mapsdk.key=您的 key
 ```
 dependencies {
     //地图SDK依赖
-    implementation 'com.tencent.map:tencent-map-vector-sdk:4.3.1'
+    implementation 'com.tencent.map:tencent-map-vector-sdk:4.4.0'
     //地图定位SDK依赖
-    implementation 'com.tencent.map.geolocation:TencentLocationSdk-openplatform:7.2.6'
+    implementation 'com.tencent.map.geolocation:TencentLocationSdk-openplatform:8.7.5.1'
     //地图组件库依赖
-    implementation 'com.tencent.map:sdk-utilities:1.0.5'
+    implementation 'com.tencent.map:sdk-utilities:1.0.6'
 }
 ```
 
